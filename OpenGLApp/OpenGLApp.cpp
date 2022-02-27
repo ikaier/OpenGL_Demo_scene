@@ -327,7 +327,6 @@ void DirectionalShadowMapPass(DirectionalLight* light) {
 
 void OmniShadowMapPass(PointLight* light) {
     
-
     glViewport(0, 0, light->GetShadowMap()->GetShadowWidth(), light->GetShadowMap()->GetShadowHeight());
 
     omniShadowShader.UseShader();
@@ -413,7 +412,6 @@ void RenderPass(glm::mat4 projectionMatrix,glm::mat4 viewMatrix) {
     vDir = vDir / vfloatDir;
     glm::vec3 vDir3 = vDir;
     
-
     spotLights[0].SetFlash(vPos3, -vDir3);
 
     glm::vec3 lowerLight = camera.getCameraPosition();

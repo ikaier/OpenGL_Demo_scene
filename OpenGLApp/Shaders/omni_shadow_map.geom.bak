@@ -16,6 +16,7 @@ void main()
 			gl_Position = lightMatrices[face]*FragPos;
 			EmitVertex();
 		}
+		
 		EndPrimitive();
 	}
 }
